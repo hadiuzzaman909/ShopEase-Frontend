@@ -1,0 +1,36 @@
+$mobile-width: 576px;
+$tablet-width: 768px;
+$laptop-width: 992px;
+$desktop-width: 1200px;
+$large-width: 1400px;
+
+//-------- min-width breakpoints --------
+@mixin mobile {
+    @media (min-width: #{$mobile-width}) {
+      @content;
+    }
+  }
+  
+  @mixin tablet {
+    @media (min-width: #{$tablet-width}) {
+      @content;
+    }
+  }
+  
+  @mixin laptop {
+    @media (min-width: #{$laptop-width}) {
+      @content;
+    }
+  }
+  
+  @mixin desktop {
+    @media (min-width: #{$desktop-width}) {
+      @content;
+    }
+  }
+  
+  @mixin large-screen {
+    @media (min-width: #{$large-width}) {
+      @content;
+    }
+  }

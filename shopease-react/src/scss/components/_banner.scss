@@ -1,0 +1,66 @@
+.banner {
+    position: relative;
+    height: 400px;  // Set the height of the banner
+    background-image: url('../../assets/banner-1.png');  // Set the banner image as the background
+    background-size: cover;  // Ensure the image covers the entire div
+    background-position: center;  // Center the image within the div
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;  // White text color for contrast against dark background
+  
+    /* Overlay Text and Button */
+    .banner-content {
+      text-align: center;
+      padding: 0 20px;  // Padding around the content to prevent text from touching edges
+  
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        font-weight: bold;
+        letter-spacing: 2px;
+      }
+  
+      p {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+      }
+  
+      .cta-button {
+        padding: 12px 30px;
+        font-size: 1rem;
+        background-color: #3498db;  // Button color
+        color: #fff;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+  
+        &:hover {
+          background-color: #2980b9;  // Hover effect
+        }
+      }
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .banner {
+      height: 300px;  // Adjust height on smaller screens
+  
+      .banner-content {
+        h1 {
+          font-size: 2.5rem;  // Reduce font size
+        }
+  
+        p {
+          font-size: 1rem;
+        }
+  
+        .cta-button {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+  

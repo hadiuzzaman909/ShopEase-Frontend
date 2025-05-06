@@ -1,0 +1,109 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+  
+    .navbar-left .logo-text {
+      font-size: 24px;
+      font-weight: bold;
+  
+      .shop {
+        color: rgb(0, 0, 0);
+      }
+  
+      .ease {
+        color: red; 
+      }
+    }
+  
+    .navbar-middle {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+  
+      .menu {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+  
+        li {
+          font-size: 16px;
+  
+          a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+  
+            &:hover {
+              color: #3498db;
+            }
+          }
+        }
+      }
+    }
+  
+    .navbar-right {
+      display: flex;
+      gap: 20px;
+  
+      .right-menu {
+        list-style: none;
+        display: flex;
+        gap: 15px;
+  
+        li {
+          font-size: 16px;
+  
+          a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+  
+            &:hover {
+              color: #3498db;
+            }
+  
+            i {
+              font-size: 20px;  // Adjust icon size
+              color: rgb(0, 0, 0);  // Set default color for icons
+              transition: color 0.3s ease;  // Smooth color transition
+  
+              &:hover {
+                color: #3498db;  // Change icon color on hover
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+  
+      .navbar-middle {
+        margin-top: 10px;
+      }
+  
+      .navbar-right {
+        margin-top: 10px;
+  
+        .right-menu {
+          flex-direction: column;
+          align-items: center;
+        }
+  
+        .navbar-middle .menu {
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+        }
+      }
+    }
+  }

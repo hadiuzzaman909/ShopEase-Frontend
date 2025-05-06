@@ -1,0 +1,125 @@
+
+html {
+    margin-right: 0 !important;
+    scroll-behavior: smooth;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    color: var(--text-clr);
+    background-color: var(--white);
+    margin-bottom: 63px;
+  
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    transform: scale(1);
+    vertical-align: middle;
+    -ms-interpolation-mode: bicubic;
+  }
+  
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    color: inherit;
+    position: relative;
+    transition: color 0.3s ease;
+    &:focus,
+    &:hover {
+      color: var(--primary);
+      text-decoration: none;
+    }
+  }
+  
+  ul,
+  li {
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+  
+  label {
+    color: var(--secondary);
+    font-weight: 500;
+  }
+  
+  input + label {
+    font-weight: 400;
+    color: var(--text-clr);
+  }
+  
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  
+  ::selection {
+    background-color: var(--secondary);
+    color: var(--white);
+  }
+  
+  /* Firefox specific */
+  ::-moz-selection {
+    background-color: var(--secondary);
+    color: var(--white);
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--secondary);
+    margin: 0;
+  }
+  
+  p {
+    margin-bottom: 0px;
+  }
+  
+  b,
+  strong {
+    font-weight: 600;
+  }
+  
+
+  //-------- custom container --------
+.container {
+    max-width: 1540px;
+    margin: 0 auto;
+    padding: 0 16px;
+  
+    &--full {
+      max-width: 100%;
+      width: 100%;
+    }
+  
+    @include tablet {
+      padding: 0 28px;
+    }
+  
+    @include desktop {
+      padding: 0 32px;
+    }
+  
+    @include large-screen {
+      padding: 0 42px;
+    }
+  }
